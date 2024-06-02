@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Preliy/semantic-release-test/compare/v1.0.1...v1.0.2) (2024-06-02)
+
+
+### Bug Fixes
+
+* meta data ([992932b](https://github.com/Preliy/semantic-release-test/commit/992932bdded9192ec5906ab703f5b5a16d8cc42b))
+
 ## [1.0.1](https://github.com/Preliy/semantic-release-test/compare/v1.0.0...v1.0.1) (2024-06-02)
 
 
