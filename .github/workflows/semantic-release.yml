@@ -1,0 +1,28 @@
+name: Continuous Integration
+
+on:  
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:    
+  build-package:    
+    needs: deploy-documentation   
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN }}
+      
+      - name: Semantic release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}       
