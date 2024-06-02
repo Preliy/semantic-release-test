@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Preliy/semantic-release-test/compare/v1.0.0...v1.0.1) (2024-06-02)
+
+
+### Bug Fixes
+
+* releaserc.js ([2625cc5](https://github.com/Preliy/semantic-release-test/commit/2625cc50afade4cc340dce683a2867ea6f18e80b))
+
 # 1.0.0 (2024-06-02)
 
 
